@@ -1,0 +1,39 @@
+.friends-screen {
+    padding: 10px 25px;
+}
+.friend__header {
+    margin-bottom: 20px;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-friend {
+    border-bottom: 1px solid var(--main-color);
+}
+
+@keyframes splashscreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen {
+    background-color: aliceblue;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140px;
+    color: var(--main-color);
+    animation: splashscreen 0.5s ease-in-out forwards;
+    animation-delay: 2s;
+}

@@ -1,0 +1,29 @@
+.nav {
+    background-color: aliceblue;
+    padding: 20px 50px;
+    border-top: 1px solid var(--main-color);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    box-sizing: border-box;
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__btn {
+    position: relative;
+}
+.nav i {
+    color: var(--main-color);
+}
+.nav__notification {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+}

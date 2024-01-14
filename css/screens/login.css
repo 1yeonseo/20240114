@@ -1,0 +1,50 @@
+@import "components/status-bar.css";
+@import "reset.css";
+
+.welcome {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome h1 {
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.welcome p {
+  opacity: 0.6;
+  width: 50%;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.login input{
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 15px;
+}
+.login input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.login input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.login input:focus {
+  border-color: var(--main-color);
+}
+.login input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.login a {
+  text-align: center;
+  color: var(--main-color);
+}
