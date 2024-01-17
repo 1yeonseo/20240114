@@ -4,11 +4,15 @@
 .chats-user {
     border: none;
 }
-.chats-screen p{
+.chats-screen p {
     font-size: 15px;
     margin-top: 15px;
 }
 .user-component__column span {
     font-size: small;
     color: rgba(0, 0, 0, 0.5);
+}
+.chats-screen a {
+    text-decoration: none;
+    color: inherit;
 }

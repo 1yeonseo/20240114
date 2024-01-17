@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" >
+    <title>Chat - YeonseoTalk</title>
+</head>
+
+<body id="chat-screen">
+
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html">
+            <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1>김친구</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+    </header>
+
+    <div id="chat__time">
+        <div class="chat__time">
+            <i class="fa-solid fa-calendar-day"></i>
+            <span>2024년 1월 18일</span>
+        </div>
+    </div>
+    <main>
+        <div class="message-row">
+            <img src="user.jpg" />
+            <div class="message-row__content">
+                <span class="message__author">김친구</span>
+                <div class="message-info">
+                    <span class="message__bubble">배고파</span>
+                    <span class="message__time">2:44</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="message-row message-row-own">
+            <div class="message-row__content">
+                <div class="message-info">
+                    <span class="message__time">3:21</span>
+                    <span class="message__bubble">맛있는 거 먹어</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" />
+            <i class="fa-regular fa-face-smile-wink"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <div id="no-mobile">
+        <span>Your screen is too big ㅠㅠ </span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3379ae6e23.js" crossorigin="anonymous"></script>
+</body>

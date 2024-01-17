@@ -1,0 +1,9 @@
+.settings__setting {
+    margin: 0 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(40, 53, 117, 0.5);
+    font-size: 20px;
+}
+.settings__setting i {
+    margin-right: 20px;
+}

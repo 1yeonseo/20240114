@@ -1,5 +1,6 @@
 .search-screen {
     padding: 10px 25px;
+    box-sizing: border-box;
 }
 .search-icons {
     display: flex;

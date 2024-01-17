@@ -1,0 +1,131 @@
+#chat-screen {
+    background-color: aliceblue;
+    height: 150vh;
+}
+#chat-screen .alt-header {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    z-index: 1;
+}
+#chat__time {
+    display: flex;
+    justify-content: center;
+}
+.chat__time {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 24px;
+    width: 170px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+.chat__time i {
+    margin-right: 5px;
+}
+
+@keyframes FadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.message-row {
+    padding: 20px 25px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    animation: FadeIn 0.4s linear;
+}
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 17px;
+    margin-right: 10px;
+}
+.message__author {
+    opacity:0.8;
+    font-size: 14px;
+    margin-bottom: 17px;
+    display: block;
+}
+.message__bubble {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+}
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+.message__time {
+    opacity: 0.8;
+    font-size: 13px;
+}
+.message-row-own {
+    justify-content: flex-end;
+}
+.message-row-own .message__bubble {
+    background-color: var(--main-color);
+    color: aliceblue;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+}
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.reply .reply__column:first-child {
+    width: 10%;
+}
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+.reply input {
+    height: 30px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid var(--main-color);
+}
+.reply__column i {
+    font-size: large;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    right: -3px;
+}
+.reply__column:last-child > i {
+    right: 40px;
+    top: 8px;
+}
+.reply__column button {
+    background-color: var(--main-color);
+    color: aliceblue;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}

@@ -12,3 +12,16 @@
 .header__i span {
     margin-left: 25px;
 }
+
+@keyframes rotateCog {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.header .fa-gear {
+    animation:rotateCog 3s linear infinite;
+}
